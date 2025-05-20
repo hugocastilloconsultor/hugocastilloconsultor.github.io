@@ -52,18 +52,18 @@
         
   <h2>Buzón de sugerencias</h2>
   <form action="https://formspree.io/f/xdkgjyya" method="POST">
-    
-    <label for="nombre">Nombre (opcional):</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name" required>
 
-    <label for="telefono">Teléfono (opcional):</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 5512345678" pattern="[0-9]{10}" maxlength="10">
+  <label for="phone">Teléfono:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 dígitos" required>
 
-    <label for="mensaje">Comentario o pregunta:</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu comentario..." required></textarea>
+  <label for="message">Comentario o pregunta:</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">Enviar</button>
-  </form>
+  <button type="submit">Enviar</button>
+</form>
+
 </section>
 
     <p>© 2025 | "Tu abogado de confianza"</p>
