@@ -44,12 +44,10 @@
 
     <section id="contacto">
       <h2>Buzón de sugerencias</h2>
-      <p>
-        <label for="mensaje">¿Tienes una duda o sugerencia?</label><br>
-        📩 Escríbeme para una consulta personalizada. Estoy aquí para ayudarte.
-      </p>
+      <p>📩 Escríbeme para una consulta personalizada. Estoy aquí para ayudarte.</p>
 
-      <form action="https://formspree.io/f/xdkgjyya" method="POST">
+      <form action="https://formsubmit.co/hh.castillog84@gmail.com" method="POST">
+        <!-- Cambia "tu-correo@ejemplo.com" por tu correo real -->
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
 
@@ -59,7 +57,10 @@
         <label for="message">Comentario o pregunta:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="hidden" name="_confirmation" value="¡Gracias por tu mensaje!">
+        <!-- Opcional: evitar captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Opcional: redirigir después del envío -->
+        <input type="hidden" name="_next" value="https://www.hugocastilloconsultorlegal.com">
 
         <button type="submit">Enviar</button>
       </form>
@@ -69,4 +70,5 @@
   </footer>
 </body>
 </html>
+
 
